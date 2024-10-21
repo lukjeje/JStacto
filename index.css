@@ -1,0 +1,93 @@
+body {
+    background-color: whitesmoke;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#name {
+    font-family: 'Outfit';font-size: 60px;
+    position: relative;
+    text-align: center;
+    text-shadow: 5px 10px 8px #888888;
+}
+
+#enter {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  /*left: 50%;
+  transform: translate(-50%);*/
+  border: 3px black solid;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+  padding: 14px 28px;
+  font-family: 'Outfit';font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 5px 10px 8px #888888;
+  transition: all 0.5s;
+}
+
+#enter span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#enter span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+#enter:hover span {
+    padding-right: 25px;
+  }
+
+#enter:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+#enter:active {
+  box-shadow: 0 5px #666;
+  top: 51%;
+}  
+
+@media screen and (max-width: 559px) {
+    #name {
+        font-family: 'Outfit';font-size: 40px;
+    }
+
+    #enter { 
+        width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+    #name {
+        font-family: 'Outfit';font-size: 5vw;
+    }
+
+    #enter {
+        font-family: 'Outfit';font-size: 2vw;
+    }
+  }

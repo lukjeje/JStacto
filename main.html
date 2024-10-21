@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+    <div id="top">
+    <button onclick="location.href = 'index.html';" id="exit"><span>go back</span></button>
+    
+    <p id="turn">turn: X</p>
+
+    <p onclick="rel()" id="r"><i id="d" class="material-icons">replay</i></p>
+
+
+    </div>
+
+    <div id="bottom">
+
+    <div class="board">
+        <div id="d1" class="board_tile remove-left-border remove-top-border"><div onclick="my(0)" class="luk"></div></div>
+        <div class="board_tile remove-top-border"><div onclick="my(1)" class="luk"></div></div>
+        <div class="board_tile remove-right-border remove-top-border"><div onclick="my(2)" class="luk"></div></div>
+
+        <div class="board_tile remove-left-border"><div onclick="my(3)" class="luk"></div></div>
+        <div class="board_tile"><div onclick="my(4)" class="luk"></div></div>
+        <div class="board_tile remove-right-border"><div onclick="my(5)" class="luk"></div></div>
+
+        <div class="board_tile remove-left-border remove-bottom-border"><div onclick="my(6)" class="luk"></div></div>
+        <div class="board_tile remove-bottom-border"><div onclick="my(7)" class="luk"></div></div>
+        <div class="board_tile remove-right-border remove-bottom-border"><div onclick="my(8)" class="luk"></div></div>
+    </div>
+
+   </div>
+
+   <div id="black"></div>
+   <div id="alert">
+    <p id="winalert"></p>
+    <p onclick="wrel()" id="winbutton">play again</p>
+   </div>
+
+</body>
+</html>
